@@ -1,6 +1,16 @@
 @charset "UTF-8";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;700&family=Permanent+Marker&family=Sriracha&display=swap');
+
+:root{
+    --font1: 'Anton', sans-serif; 
+    --font2: 'Sriracha', cursive;
+
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -20,6 +30,11 @@ header{
 header > h1{
     font-variant: small-caps;
     padding-top: 50px;
+    font-family: var(--font1);
+    letter-spacing: 5px;
+    font-weight: 100;
+    font-size: 4em;
+    font-size: 8vw;
 }
 
 header > p{
@@ -40,8 +55,11 @@ header a:hover, footer a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font2);
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 2.5vw;
 }
 
 section.normal{
@@ -56,7 +74,8 @@ section.imagem{
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.199);
-    width: 250px;
+    display: inline-block;
+    padding: 8px;
 }
 
 
